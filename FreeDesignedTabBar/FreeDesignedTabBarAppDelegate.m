@@ -8,6 +8,11 @@
 
 #import "FreeDesignedTabBarAppDelegate.h"
 
+@interface FreeDesignedTabBarAppDelegate (Private)
+- (void)setTabBarImage:(UITabBarController *)tabBarController;
+@end
+
+
 @implementation FreeDesignedTabBarAppDelegate
 
 
@@ -19,6 +24,16 @@
 {
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
+
+    self.tabBarController.delegate = self;
+
+    //背景View生成
+    _backGroundImageView = [[UIImageView alloc] initWithFrame:self.tabBarController.tabBar.bounds];
+    [self.tabBarController.tabBar insertSubview:_backGroundImageView atIndex:0];
+
+    //背景初期表示
+    [self setTabBarImage:self.tabBarController];
+
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -65,17 +80,20 @@
 
 - (void)dealloc
 {
+    [_backGroundImageView release], _backGroundImageView = nil;
+
     [_window release];
     [_tabBarController release];
     [super dealloc];
 }
 
-/*
+#pragma mark - UITabBarControllerDelegate
+
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    [self setTabBarImage:tabBarController];
 }
-*/
 
 /*
 // Optional UITabBarControllerDelegate method.
@@ -83,5 +101,26 @@
 {
 }
 */
+
+#pragma mark - Private methods
+
+- (void)setTabBarImage:(UITabBarController *)tabBarController
+{
+    //NSLog(@"selectedIndex: %d", tabBarController.selectedIndex);
+    switch (tabBarController.selectedIndex) {
+        case 1:
+            _backGroundImageView.image = [UIImage imageNamed:@"tab1.png"];
+            break;
+        case 2:
+            _backGroundImageView.image = [UIImage imageNamed:@"tab2.png"];
+            break;
+        case 3:
+            _backGroundImageView.image = [UIImage imageNamed:@"tab3.png"];
+            break;
+        default: //0
+            _backGroundImageView.image = [UIImage imageNamed:@"tab0.png"];
+            break;
+    }
+}
 
 @end

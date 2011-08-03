@@ -24,6 +24,11 @@
 		05DDB2FF13E94C050057CAC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB2FD13E94C050057CAC9 /* InfoPlist.strings */; };
 		05DDB30213E94C060057CAC9 /* FreeDesignedTabBarTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB30113E94C060057CAC9 /* FreeDesignedTabBarTests.h */; };
 		05DDB30413E94C060057CAC9 /* FreeDesignedTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DDB30313E94C060057CAC9 /* FreeDesignedTabBarTests.m */; };
+		05DDB31913E950BA0057CAC9 /* tab0.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB31513E950BA0057CAC9 /* tab0.png */; };
+		05DDB31A13E950BA0057CAC9 /* tab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB31613E950BA0057CAC9 /* tab1.png */; };
+		05DDB31B13E950BA0057CAC9 /* tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB31713E950BA0057CAC9 /* tab2.png */; };
+		05DDB31C13E950BA0057CAC9 /* tab3.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB31813E950BA0057CAC9 /* tab3.png */; };
+		05DDB31E13E951D90057CAC9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05DDB31D13E951D90057CAC9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,25 +46,30 @@
 		05DDB2CE13E94C050057CAC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		05DDB2D013E94C050057CAC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05DDB2D213E94C050057CAC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		05DDB2D613E94C050057CAC9 /* FreeDesignedTabBar-Info.plist */ = {isa = PBXFileReference; path = "FreeDesignedTabBar-Info.plist"; sourceTree = "<group>"; };
+		05DDB2D613E94C050057CAC9 /* FreeDesignedTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeDesignedTabBar-Info.plist"; sourceTree = "<group>"; };
 		05DDB2D813E94C050057CAC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		05DDB2DA13E94C050057CAC9 /* FreeDesignedTabBar-Prefix.pch */ = {isa = PBXFileReference; path = "FreeDesignedTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		05DDB2DA13E94C050057CAC9 /* FreeDesignedTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeDesignedTabBar-Prefix.pch"; sourceTree = "<group>"; };
 		05DDB2DB13E94C050057CAC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05DDB2DD13E94C050057CAC9 /* FreeDesignedTabBarAppDelegate.h */ = {isa = PBXFileReference; path = FreeDesignedTabBarAppDelegate.h; sourceTree = "<group>"; };
+		05DDB2DD13E94C050057CAC9 /* FreeDesignedTabBarAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeDesignedTabBarAppDelegate.h; sourceTree = "<group>"; };
 		05DDB2DE13E94C050057CAC9 /* FreeDesignedTabBarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeDesignedTabBarAppDelegate.m; sourceTree = "<group>"; };
 		05DDB2E113E94C050057CAC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		05DDB2E313E94C050057CAC9 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		05DDB2E313E94C050057CAC9 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		05DDB2E413E94C050057CAC9 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		05DDB2E613E94C050057CAC9 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		05DDB2E613E94C050057CAC9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		05DDB2E713E94C050057CAC9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		05DDB2EA13E94C050057CAC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		05DDB2ED13E94C050057CAC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		05DDB2F413E94C050057CAC9 /* FreeDesignedTabBarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeDesignedTabBarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05DDB2FC13E94C050057CAC9 /* FreeDesignedTabBarTests-Info.plist */ = {isa = PBXFileReference; path = "FreeDesignedTabBarTests-Info.plist"; sourceTree = "<group>"; };
+		05DDB2FC13E94C050057CAC9 /* FreeDesignedTabBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeDesignedTabBarTests-Info.plist"; sourceTree = "<group>"; };
 		05DDB2FE13E94C050057CAC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		05DDB30013E94C050057CAC9 /* FreeDesignedTabBarTests-Prefix.pch */ = {isa = PBXFileReference; path = "FreeDesignedTabBarTests-Prefix.pch"; sourceTree = "<group>"; };
+		05DDB30013E94C050057CAC9 /* FreeDesignedTabBarTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeDesignedTabBarTests-Prefix.pch"; sourceTree = "<group>"; };
 		05DDB30113E94C060057CAC9 /* FreeDesignedTabBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeDesignedTabBarTests.h; sourceTree = "<group>"; };
 		05DDB30313E94C060057CAC9 /* FreeDesignedTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeDesignedTabBarTests.m; sourceTree = "<group>"; };
+		05DDB31513E950BA0057CAC9 /* tab0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab0.png; sourceTree = "<group>"; };
+		05DDB31613E950BA0057CAC9 /* tab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab1.png; sourceTree = "<group>"; };
+		05DDB31713E950BA0057CAC9 /* tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab2.png; sourceTree = "<group>"; };
+		05DDB31813E950BA0057CAC9 /* tab3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab3.png; sourceTree = "<group>"; };
+		05DDB31D13E951D90057CAC9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		05DDB2BF13E94C050057CAC9 = {
 			isa = PBXGroup;
 			children = (
+				05DDB31D13E951D90057CAC9 /* README.md */,
 				05DDB2D413E94C050057CAC9 /* FreeDesignedTabBar */,
 				05DDB2FA13E94C050057CAC9 /* FreeDesignedTabBarTests */,
 				05DDB2CD13E94C050057CAC9 /* Frameworks */,
@@ -118,6 +129,10 @@
 		05DDB2D413E94C050057CAC9 /* FreeDesignedTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				05DDB31513E950BA0057CAC9 /* tab0.png */,
+				05DDB31613E950BA0057CAC9 /* tab1.png */,
+				05DDB31713E950BA0057CAC9 /* tab2.png */,
+				05DDB31813E950BA0057CAC9 /* tab3.png */,
 				05DDB2DD13E94C050057CAC9 /* FreeDesignedTabBarAppDelegate.h */,
 				05DDB2DE13E94C050057CAC9 /* FreeDesignedTabBarAppDelegate.m */,
 				05DDB2E013E94C050057CAC9 /* MainWindow.xib */,
@@ -234,6 +249,11 @@
 				05DDB2E213E94C050057CAC9 /* MainWindow.xib in Resources */,
 				05DDB2EB13E94C050057CAC9 /* FirstView.xib in Resources */,
 				05DDB2EE13E94C050057CAC9 /* SecondView.xib in Resources */,
+				05DDB31913E950BA0057CAC9 /* tab0.png in Resources */,
+				05DDB31A13E950BA0057CAC9 /* tab1.png in Resources */,
+				05DDB31B13E950BA0057CAC9 /* tab2.png in Resources */,
+				05DDB31C13E950BA0057CAC9 /* tab3.png in Resources */,
+				05DDB31E13E951D90057CAC9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

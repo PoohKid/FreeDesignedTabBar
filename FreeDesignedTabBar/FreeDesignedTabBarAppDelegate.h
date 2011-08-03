@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FreeDesignedTabBarAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-
+    UIImageView *_backGroundImageView;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
